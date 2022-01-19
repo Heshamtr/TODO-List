@@ -11,8 +11,8 @@
         <img alt="TODO Project Logo" id="logo_img" src="assets/images/logo.png" style="height: 30px">
         <h1 id="logo_label" style="display: inline-block">TODO</h1>
         <ul style="list-style: none;display: inline-block">
-            <li><a href="index.html" class="header-link"> Home </a></li>
-            <li><a href="#" class="header-link active-page"> About </a></li>
+            <li><a class="header-link" href="index.html"> Home </a></li>
+            <li><a class="header-link active-page" href="#"> About </a></li>
 
         </ul>
     </nav>
@@ -21,7 +21,7 @@
 <main>
     <div id="row">
         <div id="contact">
-            <h1>Contact us</h1>
+            <h1 style="color: #0a97d3">Contact us</h1>
             <form>
                 <label>
                     <input placeholder="Your Full Name" type="text">
@@ -32,18 +32,22 @@
                 </label>
                 <br>
                 <label>
-                    <textarea cols="20" rows="10" placeholder="I want to ask about .. etc"></textarea>
+                    <textarea cols="20" placeholder="I want to ask about .. etc" rows="10"></textarea>
                 </label>
                 <br>
-                <button type="submit" class="btn-info" >Submit</button>
+                <button class="btn-info" type="submit">Submit</button>
             </form>
         </div>
         <div id="details">
-            <img alt="Hesham Photo" width="200" src="assets/images/profile.png">
-            <h3>Hesham Barrakh</h3>
-            <p>Project Manager</p>
+            <img alt="Hesham Photo" src="assets/images/profile.png" width="200">
+            <article style="margin: 5px 0 20px 0;">
+                <h3 style="padding: 0;margin: 0;color: #0a97d3">Hesham Barrakh</h3>
+                <p style="color: #0276a6;padding: 0;margin: 0;font-size: 12px">PROJECT MANAGER</p>
+            </article>
             <label>
-                <textarea  cols="20" disabled style="resize: none;padding: 25px;text-align: justify;background-color: wheat" rows="10">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Architecto dolor doloremque eveniet itaque magnam molestias quisquam recusandae sed sunt suscipit. Consequuntur cupiditate eum facilis id vero. Ad labore molestias nostrum?</textarea>
+                <textarea cols="20" disabled
+                          rows="10"
+                          style="resize: none;padding: 25px;text-align: justify;background-color: wheat;color: #0a97d3">    Lorem ipsum dolor sit amet, consectetur adipisicing elit. Architecto dolor doloremque eveniet itaque magnam molestias quisquam recusandae sed sunt suscipit. Consequuntur cupiditate eum facilis id vero. Ad labore molestias nostrum?</textarea>
             </label>
 
 
