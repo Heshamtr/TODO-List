@@ -1,59 +1,60 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <link rel="stylesheet" href="css/main.css">
+    <link href="css/main.css" rel="stylesheet">
     <meta charset="UTF-8">
     <title>About Page<</title>
 </head>
 <body>
-    <header>
-        <nav>
-          <img id="logo_img" src="assets/images/logo.png" style="height: 30px" alt="TODO Project Logo" >
-          <h1 id="logo_label" style="display: inline-block">TODO</h1>
-          <ul style="list-style: none;display: inline-block">
-            <li><a href="index.html"> Home </a></li>
-            <li><a href="#"> About </a></li>
+<header>
+    <nav class="unselectable">
+        <img alt="TODO Project Logo" id="logo_img" src="assets/images/logo.png" style="height: 30px">
+        <h1 id="logo_label" style="display: inline-block">TODO</h1>
+        <ul style="list-style: none;display: inline-block">
+            <li><a href="index.html" class="header-link"> Home </a></li>
+            <li><a href="#" class="header-link active-page"> About </a></li>
 
-          </ul>
-        </nav>
-    </header>
+        </ul>
+    </nav>
+</header>
 
-    <main>
-        <div id="row">
-            <div id="contact">
-                <h1>Contact us</h1>
-                <form>
-                    <label>
-                        <input type="text" placeholder="Your Full Name">
-                    </label>
-                    <br>
-                   <label>
-                        <input type="email" placeholder="Your-username@yourDomain">
-                    </label>
-                    <br>
-                   <label>
-                        <textarea placeholder="I want to ask about .. etc"></textarea>
-                    </label>
-                    <br>
-                    <button type="submit">Submit</button>
-                </form>
-            </div>
-            <div id="details">
-                <img src="#" alt="Hesham Photo">
-                <h3>Hesham Barrakh</h3>
-                <p>Project Manager</p>
+<main>
+    <div id="row">
+        <div id="contact">
+            <h1>Contact us</h1>
+            <form>
                 <label>
-                    <textarea>Started his career as a graphic designer ..etc</textarea>
+                    <input placeholder="Your Full Name" type="text">
                 </label>
-
-
-            </div>
+                <br>
+                <label>
+                    <input placeholder="Your-username@yourDomain" type="email">
+                </label>
+                <br>
+                <label>
+                    <textarea cols="20" rows="10" placeholder="I want to ask about .. etc"></textarea>
+                </label>
+                <br>
+                <button type="submit" class="btn-info" >Submit</button>
+            </form>
         </div>
-    </main>
+        <div id="details">
+            <img alt="Hesham Photo" width="200" src="assets/images/profile.png">
+            <h3>Hesham Barrakh</h3>
+            <p>Project Manager</p>
+            <label>
+                <textarea  cols="20" disabled style="resize: none;padding: 25px;text-align: justify;background-color: wheat" rows="10">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Architecto dolor doloremque eveniet itaque magnam molestias quisquam recusandae sed sunt suscipit. Consequuntur cupiditate eum facilis id vero. Ad labore molestias nostrum?</textarea>
+            </label>
 
-    <footer>
-      Ⓒ 2022 ITUC ASAC | PREP-COURCE-PYTHON
-    </footer>
+
+        </div>
+    </div>
+</main>
+
+<footer class="unselectable">
+    &copy;2022 ITUC ASAC | PREP-COURCE-PYTHON
+</footer>
+
 
 </body>
 </html>
