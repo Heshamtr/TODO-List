@@ -1,47 +1,70 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <link rel="stylesheet" href="css/main.css">
+    <link href="css/main.css" rel="stylesheet">
     <meta charset="UTF-8">
     <title>Home Page<</title>
 </head>
 <body>
-    <header>
-    <nav>
-      <img id="logo_img" src="assets/images/logo.png" style="height: 30px" alt="TODO Project Logo" >
-      <h1 id="logo_label" style="display: inline-block">TODO</h1>
-      <ul style="list-style: none;display: inline-block">
-        <li><a href="#"> Home </a></li>
-        <li><a href="about.html"> About </a></li>
-      </ul>
+<header>
+    <nav class="unselectable">
+        <img alt="TODO Project Logo" id="logo_img" src="assets/images/logo.png" style="height: 30px">
+        <h1 id="logo_label" style="display: inline-block">TODO</h1>
+        <ul style="list-style: none;display: inline-block">
+            <li><a href="#" class="header-link active-page"> Home </a></li>
+            <li><a href="about.html" class="header-link"> About </a></li>
+        </ul>
     </nav>
-    </header>
+</header>
 
-    <main>
-        <table>
-            <tr>
-                <th>Task Description</th>
-                <th>Status</th>
-            </tr>
-            <tr>
-                <td>Download the application</td>
-                <td>Done!</td>
-            </tr>
-            <tr>
-                <td>Sign Up</td>
-                <td>Done!</td>
-            </tr>
-            <tr>
-                <td>Uninstall it</td>
-                <td>In progress!</td>
-            </tr>
-        </table>
-    </main>
 
-    <footer>
-      Ⓒ 2022 ITUC ASAC | PREP-COURCE-PYTHON
-    </footer>
+<main>
+    <table>
+        <tr>
+            <th>Task Description</th>
+            <th>Status</th>
+        </tr>
+        <tr>
+            <td>
+                <label for="chk1"> Download the application</label>
+                <input type="checkbox" onclick="f('chk1result')" checked  id="chk1">
+            </td>
+            <td id="chk1result">Done!</td>
+        </tr>
+        <tr>
+            <td>
+                <label for="chk2"> Sign up</label>
+                <input type="checkbox" onclick="f('chk2result')" id="chk2">
+            </td>
+
+            <td id="chk2result">In progress</td>
+        </tr>
+        <tr>
+            <td>
+            <label for="chk3"> Uninstall it</label>
+                <input type="checkbox" onclick="f('chk3result')" id="chk3">
+            </td>
+            <td id="chk3result">In progress</td>
+        </tr>
+    </table>
+</main>
+
+<footer class="unselectable">
+    &copy;2022 ITUC ASAC | PREP-COURCE-PYTHON
+</footer>
 
 </body>
 </html>
+<script>
+    function f(x) {
+        const check = event.target
+        const res = document.getElementById(x)
+        if (check.checked === true) {
+            res.innerHTML = "Done!"
+        }else {
+            res.innerHTML = "In progress"
+        }
+    }
+
+</script>
 
